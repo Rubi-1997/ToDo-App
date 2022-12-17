@@ -1,0 +1,46 @@
+.inputfield{
+ width: 20rem;
+ font-size:1.6rem ;
+ border: 1px solid gray;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10PX;
+    width: 28rem;
+    height: 6rem;
+    background-color: rgb(168, 191, 206);
+    
+    /* background-image: radial-gradient(red, green, blue); */
+    
+}
+.addbutton{
+    font-size: 1.7rem;
+    cursor: pointer; 
+    
+    background-color: rgb(11, 11, 79);
+    border: none;
+    color: aliceblue;
+}
+.addbutton:hover{
+    border:1px solid white;
+    box-shadow: 2px 4px solid white;
+}
+
+.setdiv{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box1{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.inputStyle{
+    width: 16rem;
+    height: 1.5rem
+}
