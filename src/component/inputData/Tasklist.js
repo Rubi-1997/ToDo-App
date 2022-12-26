@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt, faEdit, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const Tasklist = (props) => {
-    // const [checkboxtick, setcheckBoxtick]=useState(true)
     const { tasklist, deleteTask, editItem, completeTask,edit,toggleEdit,selectedit,StorenewInputValue } = props;
     console.log(props);
 
@@ -39,7 +38,7 @@ const Tasklist = (props) => {
                                         <FontAwesomeIcon
                                             icon={faEdit}
                                             className="edit"
-                                            onClick={() => toggleEdit(index)}
+                                            onClick={() => toggleEdit(index, ele)}
                                         />
                                     </div>
                                 )}

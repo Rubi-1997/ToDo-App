@@ -32,27 +32,27 @@ const InputData1 = () => {
         setTask(newlist);
     };
 
-    const toggleEdit = (id) => {
+    const toggleEdit = (id, taskName) => {
         setSelectedit(id);
         setEdit(true);
+        setInputEditValue(taskName)
     };
 
     const editItem = (id) => {
         let item = [...task];
+        console.log(item)
         item[id] = inputeEditValue;
-         
-        // setSelectedit(id);
-        
-        setTask(item)
-        setSelectedit('')
+        console.log(item[id]);
+        setSelectedit(id);
+        setTask(item);
+        setInputEditValue(item[id]);
         setEdit(false);
     };
-  
-    const StorenewInputValue=(event)=>{
-           setInputEditValue(event.target.value)
-    }
 
+    const StorenewInputValue = (event) => {
+        setInputEditValue(event.target.value);
 
+    };
 
     const completeTask = (id) => {
         deleteTask(id);
